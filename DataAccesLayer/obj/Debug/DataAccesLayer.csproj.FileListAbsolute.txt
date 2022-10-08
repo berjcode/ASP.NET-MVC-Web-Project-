@@ -1,0 +1,17 @@
+C:\Users\abdbl\source\repos\MVCProje\DataAccesLayer\bin\Debug\DataAccesLayer.dll.config
+C:\Users\abdbl\source\repos\MVCProje\DataAccesLayer\bin\Debug\DataAccesLayer.dll
+C:\Users\abdbl\source\repos\MVCProje\DataAccesLayer\bin\Debug\DataAccesLayer.pdb
+C:\Users\abdbl\source\repos\MVCProje\DataAccesLayer\bin\Debug\EntityFramework.dll
+C:\Users\abdbl\source\repos\MVCProje\DataAccesLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\abdbl\source\repos\MVCProje\DataAccesLayer\bin\Debug\EntityLayer.dll
+C:\Users\abdbl\source\repos\MVCProje\DataAccesLayer\bin\Debug\EntityLayer.pdb
+C:\Users\abdbl\source\repos\MVCProje\DataAccesLayer\bin\Debug\EntityLayer.dll.config
+C:\Users\abdbl\source\repos\MVCProje\DataAccesLayer\bin\Debug\EntityFramework.xml
+C:\Users\abdbl\source\repos\MVCProje\DataAccesLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\abdbl\source\repos\MVCProje\DataAccesLayer\obj\Debug\DataAccesLayer.csproj.AssemblyReference.cache
+C:\Users\abdbl\source\repos\MVCProje\DataAccesLayer\obj\Debug\DataAccesLayer.csproj.CoreCompileInputs.cache
+C:\Users\abdbl\source\repos\MVCProje\DataAccesLayer\obj\Debug\DataAccesLayer.csproj.CopyComplete
+C:\Users\abdbl\source\repos\MVCProje\DataAccesLayer\obj\Debug\DataAccesLayer.dll
+C:\Users\abdbl\source\repos\MVCProje\DataAccesLayer\obj\Debug\DataAccesLayer.pdb
+C:\Users\abdbl\source\repos\MVCProje\DataAccesLayer\obj\Debug\DataAccesLayer.Migrations.mig1.resources
+C:\Users\abdbl\source\repos\MVCProje\DataAccesLayer\obj\Debug\DataAccesLayer.csproj.GenerateResource.cache
