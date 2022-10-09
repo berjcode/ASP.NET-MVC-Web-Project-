@@ -37,13 +37,13 @@ namespace MVCProje.Controllers
         [HttpPost]
         public ActionResult AddCategory(Category category)
         {
-            //  cm.CategoryAddBL(category);
+           
             CategoryValidator categoryValidator = new CategoryValidator();
             ValidationResult results = categoryValidator.Validate(category);
             if(results.IsValid)
             {
                 cm.CategoryAdd(category);
-                return RedirectToAction("GetCategoryList");
+                return RedirectToAction("Ge3ist");
             }
             else
             {
