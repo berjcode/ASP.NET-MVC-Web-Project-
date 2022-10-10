@@ -1,6 +1,6 @@
 # ASP.NET MVC Web Project 
  
--Asp.net 
--Bootsrap
--HTML Templates 
+-Asp.net                                                                                                                                                                                                                              
+-Bootstrap                                                                                                                                                                                                                            
+-HTML Templates                                                                                                                                                                                                                             
 -
