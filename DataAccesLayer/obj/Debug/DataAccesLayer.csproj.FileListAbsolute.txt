@@ -15,3 +15,10 @@ C:\Users\abdbl\source\repos\MVCProje\DataAccesLayer\obj\Debug\DataAccesLayer.dll
 C:\Users\abdbl\source\repos\MVCProje\DataAccesLayer\obj\Debug\DataAccesLayer.pdb
 C:\Users\abdbl\source\repos\MVCProje\DataAccesLayer\obj\Debug\DataAccesLayer.Migrations.mig1.resources
 C:\Users\abdbl\source\repos\MVCProje\DataAccesLayer\obj\Debug\DataAccesLayer.csproj.GenerateResource.cache
+C:\Users\abdbl\source\repos\MVCProje\DataAccesLayer\obj\Debug\DataAccesLayer.Migrations.mig_writer_edit.resources
+C:\Users\abdbl\source\repos\MVCProje\DataAccesLayer\obj\Debug\DataAccesLayer.Migrations.mig_writer_edit2.resources
+C:\Users\abdbl\source\repos\MVCProje\DataAccesLayer\obj\Debug\DataAccesLayer.Migrations.mig_ImageEdit.resources
+C:\Users\abdbl\source\repos\MVCProje\DataAccesLayer\obj\Debug\DataAccesLayer.Migrations.mig_WriterStatu.resources
+C:\Users\abdbl\source\repos\MVCProje\DataAccesLayer\obj\Debug\DataAccesLayer.Migrations.mig_contentstatusadd.resources
+C:\Users\abdbl\source\repos\MVCProje\DataAccesLayer\obj\Debug\DataAccesLayer.Migrations.mig_headingstatus.resources
+C:\Users\abdbl\source\repos\MVCProje\DataAccesLayer\obj\Debug\DataAccesLayer.Migrations.mig_add_messages_class.resources

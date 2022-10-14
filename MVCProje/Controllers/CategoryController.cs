@@ -43,7 +43,7 @@ namespace MVCProje.Controllers
             if(results.IsValid)
             {
                 cm.CategoryAdd(category);
-                return RedirectToAction("Ge3ist");
+                return RedirectToAction("GetList");
             }
             else
             {

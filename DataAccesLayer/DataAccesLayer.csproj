@@ -56,19 +56,49 @@
     <Compile Include="Abstract\IContactDal.cs" />
     <Compile Include="Abstract\IContentDal.cs" />
     <Compile Include="Abstract\IHeadingDal.cs" />
+    <Compile Include="Abstract\IMessageDal.cs" />
     <Compile Include="Abstract\IRepository.cs" />
     <Compile Include="Abstract\IWriterDal.cs" />
     <Compile Include="Concrete\Context.cs" />
     <Compile Include="Concrete\Repositories\GenericRepository.cs" />
-    <Compile Include="EntityFramework\EFAboutDalcs.cs" />
+    <Compile Include="EntityFramework\EFAboutDal.cs" />
     <Compile Include="EntityFramework\EFCategoryDal.cs" />
     <Compile Include="EntityFramework\EFContactDal.cs" />
     <Compile Include="EntityFramework\EFContentDal.cs" />
     <Compile Include="EntityFramework\EFHeadingDal.cs" />
+    <Compile Include="EntityFramework\EFMessageDal.cs" />
     <Compile Include="EntityFramework\EFWriterDal.cs" />
     <Compile Include="Migrations\202210070822417_mig1.cs" />
     <Compile Include="Migrations\202210070822417_mig1.designer.cs">
       <DependentUpon>202210070822417_mig1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202210091520137_mig_writer_edit.cs" />
+    <Compile Include="Migrations\202210091520137_mig_writer_edit.designer.cs">
+      <DependentUpon>202210091520137_mig_writer_edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202210091626093_mig_writer_edit2.cs" />
+    <Compile Include="Migrations\202210091626093_mig_writer_edit2.designer.cs">
+      <DependentUpon>202210091626093_mig_writer_edit2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202210100718425_mig_ImageEdit.cs" />
+    <Compile Include="Migrations\202210100718425_mig_ImageEdit.designer.cs">
+      <DependentUpon>202210100718425_mig_ImageEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202210100802204_mig_WriterStatu.cs" />
+    <Compile Include="Migrations\202210100802204_mig_WriterStatu.designer.cs">
+      <DependentUpon>202210100802204_mig_WriterStatu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202210110529531_mig_contentstatusadd.cs" />
+    <Compile Include="Migrations\202210110529531_mig_contentstatusadd.designer.cs">
+      <DependentUpon>202210110529531_mig_contentstatusadd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202210110534372_mig_headingstatus.cs" />
+    <Compile Include="Migrations\202210110534372_mig_headingstatus.designer.cs">
+      <DependentUpon>202210110534372_mig_headingstatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202210130742149_mig_add_messages_class.cs" />
+    <Compile Include="Migrations\202210130742149_mig_add_messages_class.designer.cs">
+      <DependentUpon>202210130742149_mig_add_messages_class.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -86,6 +116,27 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202210070822417_mig1.resx">
       <DependentUpon>202210070822417_mig1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202210091520137_mig_writer_edit.resx">
+      <DependentUpon>202210091520137_mig_writer_edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202210091626093_mig_writer_edit2.resx">
+      <DependentUpon>202210091626093_mig_writer_edit2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202210100718425_mig_ImageEdit.resx">
+      <DependentUpon>202210100718425_mig_ImageEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202210100802204_mig_WriterStatu.resx">
+      <DependentUpon>202210100802204_mig_WriterStatu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202210110529531_mig_contentstatusadd.resx">
+      <DependentUpon>202210110529531_mig_contentstatusadd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202210110534372_mig_headingstatus.resx">
+      <DependentUpon>202210110534372_mig_headingstatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202210130742149_mig_add_messages_class.resx">
+      <DependentUpon>202210130742149_mig_add_messages_class.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
