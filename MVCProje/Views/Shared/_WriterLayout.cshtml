@@ -1,0 +1,178 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>Yazar Paneli</title>
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="~/AdminLTE-3.0.4/plugins/fontawesome-free/css/all.min.css">
+    <!-- IonIcons -->
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="~/AdminLTE-3.0.4/dist/css/adminlte.min.css">
+    <!-- Google Font: Source Sans Pro -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+</head>
+<!--
+BODY TAG OPTIONS:
+=================
+Apply one or more of the following classes to to the body tag
+to get the desired effect
+|---------------------------------------------------------|
+|LAYOUT OPTIONS | sidebar-collapse                        |
+|               | sidebar-mini                            |
+|---------------------------------------------------------|
+-->
+<body class="hold-transition sidebar-mini">
+    <div>
+        <!-- Main Sidebar Container -->
+        <aside class="main-sidebar sidebar-dark-primary elevation-4">
+            <!-- Brand Logo -->
+            <a href="index3.html" class="brand-link">
+                <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMSEhUSExMVFRUXGBgXFxgVFxUVFRcVFRUWFhUVGBUYHSggGBolHRUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGhAQGy0lHyUtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAOEA4QMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAAAAgMEBQYBBwj/xABDEAACAgECAwQGBQoEBgMAAAABAgADEQQhBRIxBkFRYRMicYGRoQcycrHwFCNCUmKSorLB0TNDc4JTg5Oz4fEV0uL/xAAaAQEAAwEBAQAAAAAAAAAAAAAAAgMEAQUG/8QAMREAAgECAwUHBAMAAwAAAAAAAAECAxEEITESQVFxsRMiYYGRofAFMsHRFEKyI9Lx/9oADAMBAAIRAxEAPwD3GEIQAhCEAIQhACEIQAhCEAIThMSbB4zl0BcIgWDxiuYQmmDsSXEZt1GOkb9NK5VYp2OqLJQYQkVWj/pxOqaeoaHBOxg2xSPJKSODsIQkgEIQgBCEIAQhCAEIQgBCEIAQhEloAqE4DAwDsISPfdy49UsT0VcZPidyAAPEnw7yBAJE4Yxpr+cdCpHVWxzA+eCQfaCRI2v1VgPJSi2WY5iHc1oqkkAswVjk4OAFP1T0hgetaMO0i6DiXpOZLFFVyY9JWWDABs8ro+Bz1thsNgfVIIBBAkOc9J51ad3ZP3RdBCPSxL6gjvjbtiRrbZhnWcVqXxp3JTajMbNsiLZmOgypV3LMt7NIl13x8GQFkim3E1Uql8mUzhvRLVsR1WkQOIr0k1RqWKXG5Prfui+aQ6WknmmuE7oqasOAzsQrRcsTOBCEJ0BCEIAQhCAEIQgBGo7G3EjIDbviIDzlhiVMzueZNIkI0iVv+etdj6qKiDPQHBdyPbzID9gSQG3mE+kzidunHKh5V1PJULMhRVYGPMxJPVq29XbrVv1E7VquFNta7ufW292z4IjYd4z2ytew1aFFZgeR7rM+grbBPKcb2WDH1RsM7kZmbq4PdqQ1mo1uqLM78wrcU1HkY1KfRp+zWvft8SY3Zzhl6XuK3qar82QgsZ1r5VIAPcHJYNtucZPUZkVaXVvqSM8ldPpVtrBO/pXayt8dGBDphu7kYeM+brYmtK6VVWsnfybtpre0Ul3dLt5MbiBrezNKshXVahSW5WYXNzgFW5cH7XL8TJqpxHRj0lF/5XUOqXf4mPJ9+Y+34GWXFNDVRWjODu4LEZJCoGcnbf8ARA28RHdHdRanNXUDkf5iYYj2tkzNKvU2VOS2lp3kra8cnF8pJ2scTaebsyy7OdpqtahKZWxNrK22dD5jwznf+u0snnlPaHTvpLa9RR6lik4xupUtn0R/WXGF9g9mPReCcUXVUV3p0cbjqVYbMvuIImyou5GcbuL04prc3v8AB71fhd7cNU27p6ol4wcx5bI08TXKIvZdkbWrkxWi1aMZilaaYzKXEfDxYfaMBotZdGoytxQ9XYRJ6WZEr1kytdpsw82UVEiSseEjiPVT0YMzschCEtOBCEIAQhCAE4TOzhEAZZojm8YWbRDNtM8pEkhFzRNVoHWM32yObJinX2ZXL4020TrNRM92v4c2ppAXlNlbCyvm+qWXIKN4BlLLnu5s90nmyBuEyVa/aJpssVHIzXZ3X12LyIorevaykgI9bd4KDu8GGx6iSddw82OtqO9Nqjl9JXy+smc8jqwKuuckZGRk4IyZ3jXA9PqSGsTDr9WxGNdq+QdcHHl0lQexZbb8u1JXwtFVp+LLPJp4fvXjPZ13Nr1vnfg16o46Ekit7RccWhWHpmusccjW4XkrQ/WWsKOXm26bnOCx2Ai+BcV9IV2CjACqOgUDAEvV7BaVkPO111hGPSXWM7DyUDAUewCef8J0Zp1Rod/qHG2RkHcdSfZ7pueFo9lJf2Scr8VpklpbJWssnlvMdaMovM0PbCvnrIXcp65PhjcD5fjET9F2sz+UU9wZbVHgLAQwHllPnJPaPVVpX6NMFmyMDfu6+cqvotTF7f6ZX92z/wDRkMMr4KV1kmreub6r1J0Xs1kejmcAimERmVZbz1kKiljeZwPG0jrRIUx9ZGSPKZfTZTJD6R5HMjI0dLTbSdldFEkSq2k1DK2qTa3noUZmeaJUIlTFTWmVBCEJ0BCEIAlmxGTcY5aJGbaU1JNEkhTkmQ7rMSSDgSHcsyVpO2WpbBIYcxsxTmMlp5lRmuKyOO0ZYEx0wxMslcuWRGY4iqbMwukbU61KhliJUo94sS2slqXVTTyPjBSzil6sgcKUXG3NsgJIHh63ymtq7TPZkVAY/XbPIPYBu/uwPOZPsm1OostfUBG9Ja7euoK42A2PTpN204RlOzyjbLXvNf8AV7zz8bScLJ7yw4pbTUAK0CnHQLyEnHTzj30T6QlrrDtgbf73b/6xvtHqdPSH9EK12x6gQE+3Ez/ZnW8gsc6m6nPKoCeIBYk8ysuPXwNvGdwcNrDvJ5tZvNu3Ld5mWjG9XU9htTEjFvGYfT8ZvYfmtb6TH/Erqf4+j5I3b2g1qfW/J3/6lf380oqUZN91rlmuqR7tPD1JK6V/FZ9G36m7N4jfpQTMQna+0fX0ufNLUb+blMcq7dUfp03J7VDD+FjK3hsRujfk0+gdPYXeTXNNdUje1OPGPpMRp+22iJ/xSv2kdfmRiXWj7Q6R9k1NJPhzqD8CZJRrU/upv0ZnezL7ZJ+afS5ogI8glbVqFP1XU+wgyXTYfES6nio3s0ymcGiUsl1CM6Zc94k9KgJ7OHpuS2txjnJaCk6RUJzIm3QqOwhCdAQhCAEjWkSTItqyupodWo2wkS9o9bYRIbHeefWnuRopreNssb5I/ALMThc0bViPyRFmwyTgSr452so02UH520foJg8v226L79/AGefcX7Q36rIc+r/w0yEx+03Wz34HlH8Zs14fD1KzvFZcfn4uafjfa1FylH5xuhI+oD5t/QZmWt57M2XvzAb77IMd4T+plPxC9kXI69PIDykDh7PbzgkthSQudmYD1R57zTTwqjBzTt46vy4fLs1V61LB/wDHbala/h83+W40Gn4taUsdMBVVm368o2B8iT456GaLsd2e0tmkraytLGxuTs653K8y4bGSepMynEm9CjsmLKb6CoIGeXmb0iHyIPMPKabhXZOw0pbTrLKwwGVKK+Nu45BxMmJkuyvGWwnLJq+5Ws9nNNNvd7M+fqV6laW1Ud2Vfa/QUUKxrrVTnAySx9xYkzO6XiZFbV7AFuYkY5ieRFwM9Pqza6zseOVnste5hv6+Ao/2j+uZireGurkrgZI5QwGGycbZ2O+3xmjA1aNSnsyltNO93fXzzyMz7rYwHwedSykdHBJx9oHfHylpruKGxN8CxdmA6HbIYeRG8i6XRl1Z8ANWPziAcrBe9gvR18QMEdd5EYDJwcj0Y9x5sAfCbWoTlnrH56cN3DebPp9epCpsxeTuR/y1opdU2esjFI7UviZqcYl9OtXcs5P1LOpyRFmtD1RfgJH09xHT5ywrfxUTJO8XkfS4dwqwV1d+KIdelqzkIAfFC2f5pY6ayxPq6jVJ5C0kfunaOU1g/oTmqZF7smVSqOfdd37nf4tBf0S5JLpYmV9odYm41bkeFlVbfNSDHq+32uTo9RHkHr+8mZa/U5MRUCT+Nv7y2NOyu/10sYZRw7ls0435tv8A1de3tdr2n6Pu2p1bGm0ctgGcHr7R4jzm3chmE+dfXq5LaW5Lqjzow65/SU+II2x/eet9nu0w1mnS7ABP1gP0WGzD45+Uuoy2o2T37zyPqGFdKporW3enXW2W9JJpG2zOys4bYH3PUSzmhM85hCEJ0BGHXMfiSsjJXBX2JGnri+McTo0tZtvtWtemW6k/qqo3ZvIAmeXdpPpEssymnBor6c7ANew8lOVqHtyfJZjqUrGvD0qlZ2gr8eC5vd5mw7RdoqdIMO2bCMrWvrOR48vcPM4HnPOeN9sNRfleY1J+pWcMft2Df3Lj2mULX5JJJBJyxJLO58XYnLH2xK0k9BKVCKzfz56n0GG+nQgk52b9v30Xg0cFhxjoPBRiPhmwN8DwnQmO4Z+U47MfCG0z1IqysM3ZO3URn8jB3HqnxEkkHxjtdJx1ktvZWRXVo06itNXXzTgK4dwxSliF2yytyjbHOQeXYjxx0lr2O4prBWtdJqdWGQLWZCpGxAPKc7gyrDFfxvIdmpspYuueVjzHH6DnqfYfx501Kcq0ZRdm3Zq/hl4P3V1dcDwPqf05U4KpQWS15cf35cD0urhuptx+U2VovelBc59thC4HsHvEZ7RmoPpqwFGLKzjA2rRg7ez1VaZWjt4QmGyT5Sk1HHWdmYZLttn9VfATzaX0zEOXfVkr2tx08Od9+m88VPayiXHaTjqLqLvRgesgXOBtuc4+MydS4X2/d3RxU3LNuT8B7f1jFWV5nuUKMKMFGPhd8bKx6eHwkoJyecuHzf8AHZ5EbA8DHhRkySmnHefjHKaM/jpLXUW43U8BL+yy+cBiinElIsHAHnIlt/cJXnPQ3p08LDMmXa49BK6+8n8fdOBST4/cv95Kq02NzJKMYGNyr4p2jkvb54dGNU0c3Xp+OsstPR4b+cbA+EdFuOm0qqTlLI9OhhYUVlrxJWoOFHiJbfRjquU6inuBDr78g7e5Zl7tR1kzshquS+5iQByYJPQdP7SzDwtqeV9XnFxik8036NO/RHsXBbyWxnvmvmE7EVvZzWMvKo+qDnm9reGfDqMb7nA3NZyBNb1PnZC4QhOkQnnnbD6QBSWo0gWyxSVstbPoqm71GP8AEsHeAcDvOdpp9R2V0jBytFdbvzEvWorfnbOX5lwS2TnJnjfHewGr0Q3dbatyHVrV5fEsm4Ud5IzjvON5XUbUcjRhY05VUqmnzmVWv1llr+lsse1+nPYdwP1UHRF8lx75Djz8F1KjPIxHX1XRgR4jIGZDcWJ1DD21g/ymZlZ6NM+kWIhBKMYOKXhl72H1WPhj5yt/Kz+wfZlPvEcXVn9X+IH7olTkWwx+G0Tfo37pNE3lilpz3iQfy096H4RScRXodvlI9nMt/nYe9nNLnkT1rA/Sj9dYzu3ykCvVoe8SQG8DKpRe8vhOM84NPk0yxZUxs2/nIFmR359kSQTEmRjGxYo2GzSpO6J8BBqfAfuxzODHkux029sntMhsRWiIv5MfAThq8pZVW83Ue+K1J5JHtXcjsR0sVqoBgn8Ccu1WMjoI3qtUN8Ssdyx8ZfCntZsxYrGxpd2GbHbtUT0nNPQT1/8AMf02j7z1k07DbrJymllEooYOpVfaV35CEpCjz+Qgs5mNWWYldmz0nONKPBIcZ5E1Gq8JFvvz0jddZJl8ads2eHifqU6ncp+os2nqTNz2B7OFx6Vwck5UHoPA48dz7JQ8F4RzsCRnf8bT2Xs5pORFAG8lGV5K2h51XurvO76cW/mRe8M4dyIqg4xuZbgSFolYHyk6WIxsIQhJHAldZxFOlldi+2p2X286BlHxljCAY3T2aRNQKUel6byQiqyk03gM5TAPq1uqsQDjlZSP0wA9xLsrp3614j/bbh9l2ms5Gr9RfSqllfpAXpItTBDDGWRR3jyPSQV4dqQFZNPonVhzZqtv0TEEAggIj7+1pXKCZZCpKP2soNb2C056EiVF/wBHlfcw94mztNwwDpdYni1d+m1Cj2+msLY9ixLMenNYP9bTWfzoqr85Q4NaGlYmT+5352f4PPtR2AI+qfgxEr7uxly97fJp6bgk4DUuf2XKn4etE2LYOtTH7JUj+IqflIOc0dVXh7ZdLHkl/Zy4dwPtTl+6QX4Tcv8AlfunH3z2Ky8D6yuPajH5gESO5obryfEA/DrOqs0SvF6r8/6uePt6VOq2r8SPiRFJxRx+l8UB/rPVreD1H9HHsldq+zdT9ce8A/Od7SD1Xz3LY1qkftm1zv8Ahpex5+nFj3op9mQY/XxNCMEY94mi1HYpO7b2Sut7Ft+i/wAf/UbNKWnsaIY7FRf3RkvHL8LqQxxFRuDImo1pbv2++c1HZ6+tedhjBwV9bOcZ8MEeYJHnINVZJ6jHfnuk1ShHMS+o4iolHZtfh+c8rb1rxyHEBbYdJZabSDEd0+lA9kfbbYSmpVvlE9bC4JUu9POXTkNYA2jLnG8fawJ5mVmq1W/n90jCLkW4jEwoxvJjlt20rbLCxiSSTJei0Jc7dPH+012UFmfN1q9TFSstBvTacscD/wBf+ZoOHcMA6jeTOH8NCjAG/wB00nCuG9O898yVK9+RHKGUPX9fvXyyT3Z/hGNzNpoEOQBIeh0p2xsJodNWAMCRp1XKRmnkSkrOBiSY1XHZ6MTMEIQkgEIQgFZ2gvdNPY1aK5CnIZig5cHmbIVug3xjukWvWXVItZ0thCqFyrUsuFAGd3Dd36sr+0/ZTT3BnJvFthCDk1OoVSznlz6MPylQCSRjopjJ7AhTmriPEq/Iaouv7titmcZ1E1+0SZwyWqf2qbgv7/Ly/OcTj9LHC2Vk+Adc/DOZFPZzXp9TiZfy1Glps28Oas1tG9Rw7XcuHq0Wo991GR7CtoEpaZNNFk+qRhhhkee4jS109yhfsjk/lxKl9AyjfQOD3/kt1Q9+S1RPwiXUL3auvyNVlvxZVs+OZDvHci5OkQ9HI/3c38+Y3bwvPRhj9pcn4qQPlKM6hVOPymoHwswj/ull+6S1N435QR4qxOfdjHzkG+KJpcGdt4BjdUT2qeVvb0H3yM/CXHQuPIkN/NzfKSPy6wdVce7m/lJkPTdrAz4X1kGQbGwqcw25FLbucjfGwxjOdpCyfE6mzi6dwfW3H2fW+IOPlJun0oMlVcXrfqufZv8AOTdNfpz3kRsRb1Oyk+Bl+26106NiQOZyFX37k+4An3Tx2xOU7dG6f0npn0v6xSKlRsjDn3goB95nnnHEC+jx+rL4u1kTjK0Lvdn7/q5I4fcSMfD2fj+kkW3gDzlRp7uX8eP4E5fqMyDo3ke7D6hGFBbX3LIXqtV4SCASY4ted5acL4abWAA9WWuUaaueVPtMRLanp89hjh3DzYcAbfj5TY6PQBQAvXvPhH9JoVrXC48zJ2l0vPsNhPLrYnbd9xLJLZjp1+cDnD9Hk7e8zVcN0PuETw/huMEiXdNXwmLbdSVkVSyQ5p6+4SwpXEb09PhJiV4nr4XDuKuY5zuzqCLhCeglYpCEIToG7bAoLE4AGSfITzfiXb62y2qvTryJc/JUxCGyzAyWzYwrqGMEc3MTn6udp6RdUGUqehBB9hnnXEew96I1WnNb0E59DeOZcDooPcB5g+W20pquStZGihGnK+00nuvp5/PXQuuGcNvvZdS916cgxUrtXYrn1g17VoqqMg4Xlx6pJ/SwJmqt1a59al/L0dlXxPO/3TCJZxXRbCvUBBk4UjWVewBs2geAXAjun+kfUA8liUO3eDz6Z8fYbmPykJVVvuvL4i1YKo/scZcpK/o7P2NR/wDL3r9ekf8AKtDf9xUgnaLH1kuT2oX/AO3zCVlPbbTvtbp7U8Sprdf5g3yjw45w9/8APKf6ldtY/eZcH3GQUm/taOTw9Sn98JLmi0TtHXnBtUHwYhT8GwZNTiAIzsR+PCUunqpt/wAHUU2fYsRvuMau7PEb+jHtCjPxEOU1qim0dzNAdQp6iRTw/Tk59GgP6wUK37w3lA+nsTobB/uY/JiR8opNZavVs/aUH+XlnO14klBsOIUen1I0NVjitUFuqPpGY8jkiqgMxLKXIYkgjCr+1NCOGKFChAFAAAUAAAdAAOgmC7E8SZl1GoIBN97tnJX1ECpWvQ7ADxmqr4z+y3tBXH82flJylG9mRSeqHdRwJG35R7wDIrdn/A4+yWUfIyfXx1f1m96P/aSaeKqxwGRj4AjPwG85sxY2meWfSNw51NZPQ86+/wBRvuDTEcRcsiE9wwfaJ7J9I2k9LpWcLk1kWjHguVsx/sZ543xb1WK9xPMPf+MyVNWskWN3g/nIhZ3+Ek11d5jFS75/H46TQcG4Q1zAsMAfKSq1FBXZow0E7yl85/reJ4VwprmG2Fmy0mhWsYHT75L0eiCLgbASXVpS58p4tfEObz0NMpXIun0psIx0ml0OgCgbRej0YUdN5Y00zFeVV2RTKSihVFUsaKsxGnpzLBFwMT2cHhbK7MNWpcFXEVCE9UoCEIQAhCEAIQhACR9Zoq7Ry2Vo48HUMPgZIhAMrrPo/wCHuMCgVf6LNV8kIEpNV9GA606u5PJwli/cG+c9EM40qlTi9UX08TWp/ZNrzPHuI/RxrgNm0uoHhYrIf4ucSrs4HxOjYaS9AOh0uoYD9yt1Pynt7RBMp7OMdMvbpYv/AJ1Z/dZ80n7tN+9zwt+1uro/xbtZUOmNRUCPf6Wsn5x9e3jsD+d0zjB60MjdO5lsAz/tntbb7HpMd9IPCdIuh1N7aennWpuR/RoGDt6qEMBnPMwnLbrvr1QeIi9acfLaT9pW9jA9k+O+h01dJoVwoJ5luIc8zM26GvA64+t3S4Hain9Ki5P+mw+TZ+Us+HfRdorNNSXWxLjVWbHrsb/EKKXIV+ZRvnbGJG1P0SD/ACddavk6Bx/Cy/dOSjtN2fsdp1qCSU4S8pLpsr0v6iKu0ekb/Mdf9SuxR+9jEnafilDnCaionw51B+BMzuq+jPiSn83qNPYPPKN8OQj+KVOs7NcUpzz6RrAO+orZn2KjFv4ZHs/Fev7LU8JL+0o84p/5k31PUKlZlIzzKR7RPDuP0BL2qByqEqv2Qdh7unuk1OLmgkNU9bY6MgVvediJZ9heBDWmy5uYhGAO3qkkZ5Q2dyNsjuyPGTgpQ7zX/pGrSoxyjUUr8E8kuKtq8kl0GuAdnTZh3GPAeX95v9Fw0VoNtvCXPDOCBQCRgDoJPfRj3Tz8TJt5jtdrl81+ckiko0XPv0Es9PpQvQSUKcbCP1UzztiU5WOupYbrqk3T0Zi6aMmT0QDpPYwmEWr0MlSrwOIgAi4QnqpWyRnCEIQAhCEAIQhACEIQAhCEA4YETsJywGGEbMlGINcrcGduRiJgfpRv9OdLwxN31VqFx4UIclj7wW/5TS77XdtNNoQUz6bUHASis8zljsvNjPICfee4EyB2I7NXi2ziOu31Vwwqd1FR6IB3HAAx3AdclswUGnclc2AHhFgTvLOqJCMbBsPRxD0GSFEWVkpUIS1ObTRhNB2JqS46m931V+ch7yGCDuC1j1Rju227sTRCrux07gMD4S29AIpawO6UPByk7ykTVRLRFeiTjVyyZQYj0Ikng8rXHaFctMmVUSQqgRUnTwsY6kXUbEhcdIqEJrIBCEIAQhCAEIQgBCEIAQhCAEIQgBCEIBE4g9gqc0qr2hTyK55VL49UMwGwzPOW7I8b1ZP5XxFaUJzy6cv0715UCbe1m88z1GEAynZTsHo9Bh60L2/8WzDPv15RgBOp6AE95M1cIQAnMTsIAQhCAEIQgBCEIAQhCAEIQgBCEIAQhCAEIQgBCEIAQhCAEIQgBCEIAQhCAEIQgBCEIAQhCAEIQgBCEIAQhCAEIQgBCEIAQhCAEIQgBCEIB//Z" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
+                     style="opacity: .8">
+                <span class="brand-text font-weight-light">Yazar Paneli</span>
+            </a>
+
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <!-- Sidebar user panel (optional) -->
+                <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+                    <div class="image">
+                        <img src="~/AdminLTE-3.0.4/dist/img/abdullah.jpeg" class="img-circle elevation-2" alt="User Image">
+                    </div>
+                    <div class="info">
+                        <a href="#" class="d-block">Abdullah Balıkçı</a>
+                    </div>
+                </div>
+
+                <!-- Sidebar Menu -->
+                <nav class="mt-2">
+                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                        <!-- Add icons to the links using the .nav-icon class
+         with font-awesome or any other icon font library -->
+
+                        <li class="nav-item has-treeview menu-open">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon fas fa-tachometer-alt"></i>
+                                <p>
+                                    Profilim
+
+                                </p>
+                            </a>
+
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="/WriterPanel/MyHeading" class="nav-link">
+                                <i class="nav-icon fas fa-th"></i>
+                                <p>
+                                    Başlıklarm
+                                    <span class="right badge badge-danger">Yeni</span>
+                                </p>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="/WriterPanel/AllHeading" class="nav-link">
+                                <i class="nav-icon fas fa-list-alt"></i>
+                                <p>
+                                    Tüm Başlıklar
+                                    <span class="right badge badge-danger"></span>
+                                </p>
+                            </a>
+                        </li>
+
+
+
+                        <li class="nav-item has-treeview">
+                            <a href="/WriterPanelMessage/Inbox" class="nav-link">
+                                <i class="nav-icon fas fa-edit"></i>
+                                <p>
+                                    Mesajlar
+
+                                </p>
+                            </a>
+
+                        </li>
+                        <li class="nav-item has-treeview">
+                            <a href="/WriterPanelContent/MyContent" class="nav-link">
+                                <i class="nav-icon fas fa-table"></i>
+                                <p>
+                                    Yazılarım
+
+                                </p>
+                            </a>
+
+                        </li>
+
+
+
+                        <li class="nav-item has-treeview">
+                            <a href="/Default/Headings" class="nav-link">
+                                <i class="nav-icon fas fa-book"></i>
+                                <p>
+                                    Siteye Git
+
+                                </p>
+                            </a>
+
+                        </li>
+                        <li class="nav-item has-treeview">
+                            <a href="/Login/LogOut" class="nav-link">
+                                <i class="nav-icon far fa-plus-square"></i>
+                                <p>
+                                    Çıkış Yap
+
+                                </p>
+                            </a>
+
+                        </li>
+
+
+
+                    </ul>
+                </nav>
+                <!-- /.sidebar-menu -->
+            </div>
+            <!-- /.sidebar -->
+        </aside>
+
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper">
+            <!-- Content Header (Page header) -->
+            <!-- /.content-header -->
+            <!-- Main content -->
+            <div class="content">
+
+                @RenderBody()            <!-- /.container-fluid -->
+            </div>
+            <!-- /.content -->
+        </div>
+        <!-- /.content-wrapper -->
+        <!-- Main Footer -->
+
+    </div>
+    <!-- ./wrapper -->
+    <!-- REQUIRED SCRIPTS -->
+    <!-- jQuery -->
+      <script src="~/AdminLTE-3.0.4/plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="~/AdminLTE-3.0.4/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- AdminLTE -->
+    <script src="~/AdminLTE-3.0.4/dist/js/adminlte.js"></script>
+
+    <!-- OPTIONAL SCRIPTS -->
+    <script src="~/AdminLTE-3.0.4/plugins/chart.js/Chart.min.js"></script>
+    <script src="~/AdminLTE-3.0.4/dist/js/demo.js"></script>
+    <script src="~/AdminLTE-3.0.4/dist/js/pages/dashboard3.js"></script>
+</body>
+</html>

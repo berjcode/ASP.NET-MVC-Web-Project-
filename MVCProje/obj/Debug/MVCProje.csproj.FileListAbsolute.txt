@@ -103,3 +103,7 @@ C:\Users\abdbl\source\repos\MVCProje\MVCProje\bin\System.Threading.Tasks.Extensi
 C:\Users\abdbl\source\repos\MVCProje\MVCProje\bin\FluentValidation.xml
 C:\Users\abdbl\source\repos\MVCProje\MVCProje\bin\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\abdbl\source\repos\MVCProje\MVCProje\bin\System.Threading.Tasks.Extensions.xml
+C:\Users\abdbl\source\repos\MVCProje\MVCProje\bin\PagedList.dll
+C:\Users\abdbl\source\repos\MVCProje\MVCProje\bin\PagedList.Mvc.dll
+C:\Users\abdbl\source\repos\MVCProje\MVCProje\bin\PagedList.xml
+C:\Users\abdbl\source\repos\MVCProje\MVCProje\bin\PagedList.Mvc.xml

@@ -18,6 +18,6 @@ namespace DataAccesLayer.Abstract
         void Delete(T p);
         void Update(T p);
 
-        List<T> List(Expression<Func<T,bool>>filter);
+        List<T> List_(Expression<Func<T,bool>>filter);
     }
 }

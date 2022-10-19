@@ -22,3 +22,6 @@ C:\Users\abdbl\source\repos\MVCProje\DataAccesLayer\obj\Debug\DataAccesLayer.Mig
 C:\Users\abdbl\source\repos\MVCProje\DataAccesLayer\obj\Debug\DataAccesLayer.Migrations.mig_contentstatusadd.resources
 C:\Users\abdbl\source\repos\MVCProje\DataAccesLayer\obj\Debug\DataAccesLayer.Migrations.mig_headingstatus.resources
 C:\Users\abdbl\source\repos\MVCProje\DataAccesLayer\obj\Debug\DataAccesLayer.Migrations.mig_add_messages_class.resources
+C:\Users\abdbl\source\repos\MVCProje\DataAccesLayer\obj\Debug\DataAccesLayer.Migrations.contact_adddate.resources
+C:\Users\abdbl\source\repos\MVCProje\DataAccesLayer\obj\Debug\DataAccesLayer.Migrations.mig_imagefile.resources
+C:\Users\abdbl\source\repos\MVCProje\DataAccesLayer\obj\Debug\DataAccesLayer.Migrations.add_migrationadmin.resources

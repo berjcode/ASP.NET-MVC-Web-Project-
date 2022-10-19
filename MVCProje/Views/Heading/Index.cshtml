@@ -129,37 +129,4 @@
 </html>
 
 
-@*
-    <h2>Başlıklar</h2>
 
-    <table class="table table-bordered">
-        <thead class="thead-dark">
-            <tr>
-                <th>#</th>
-                <th>Başlık Adı</th>
-                <th>Category</th>
-                <th>Writer</th>
-
-            </tr>
-
-            @foreach (var item in Model)
-            {
-                <tr>
-
-                    <td> @item.HeadingID</td>
-                    <br />
-                    <td>@item.HeadingName </td>
-                    <br />
-                    <td>@item.Category.CategoryName</td>
-                    <br />
-                    <td>@item.Writer.WriterName</td>
-                </tr>
-
-
-            }
-
-    </table>
-
-    <br />
-
-    <a href="/Heading/AddHeading/" class="btn btn-info">Başlık Ekle</a> *@

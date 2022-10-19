@@ -16,6 +16,8 @@ namespace MVCProje.Controllers
 
 
         CategoryManager cm = new CategoryManager(new EFCategoryDal());
+
+        [Authorize(Roles="A")]
         public ActionResult Index()
         {
             var categoryValues = cm.GetList();

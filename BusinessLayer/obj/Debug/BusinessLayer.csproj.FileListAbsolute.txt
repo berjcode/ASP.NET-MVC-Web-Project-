@@ -22,3 +22,7 @@ C:\Users\abdbl\source\repos\MVCProje\BusinessLayer\bin\Debug\System.Threading.Ta
 C:\Users\abdbl\source\repos\MVCProje\BusinessLayer\bin\Debug\FluentValidation.xml
 C:\Users\abdbl\source\repos\MVCProje\BusinessLayer\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\abdbl\source\repos\MVCProje\BusinessLayer\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\abdbl\source\repos\MVCProje\BusinessLayer\bin\Debug\PagedList.dll
+C:\Users\abdbl\source\repos\MVCProje\BusinessLayer\bin\Debug\PagedList.Mvc.dll
+C:\Users\abdbl\source\repos\MVCProje\BusinessLayer\bin\Debug\PagedList.xml
+C:\Users\abdbl\source\repos\MVCProje\BusinessLayer\bin\Debug\PagedList.Mvc.xml

@@ -24,6 +24,11 @@ namespace BusinessLayer.Concrete
             return _headingDal.List();
         }
 
+        public List<Heading> GetListByWriter(int id)
+        {
+            return _headingDal.List_(x => x.WriterID == id);
+        }
+
         public Heading GeyByID(int id)
         {
             return _headingDal.Get(x => x.HeadingID == id);
