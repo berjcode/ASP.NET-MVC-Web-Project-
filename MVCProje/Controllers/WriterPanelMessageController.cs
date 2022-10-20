@@ -1,5 +1,6 @@
 ﻿using BusinessLayer.Concrete;
 using BusinessLayer.ValidationRules;
+using DataAccesLayer.Concrete;
 using DataAccesLayer.EntityFramework;
 using EntityLayer.Concrete;
 using FluentValidation.Results;
@@ -16,15 +17,19 @@ namespace MVCProje.Controllers
 
         MessageManager messageManager = new MessageManager(new EFMessageDal());
         MessageValidator _messageValidator = new MessageValidator();
+       
         public ActionResult Inbox()
         {
-            var messageList = messageManager.GetListInbox();
+            string p = (string)Session["WriterMail"];
+          
+            var messageList = messageManager.GetListInbox(p);
 
             return View(messageList);
         }
         public ActionResult SendBox()
         {
-            var messageList = messageManager.GetListSendBox();
+            string p = (string)Session["WriterMail"];
+            var messageList = messageManager.GetListSendBox(p);
             return View(messageList);
         }
 
@@ -55,10 +60,11 @@ namespace MVCProje.Controllers
         [HttpPost]
         public ActionResult NewMessage(Message p)
         {
+            string sendermail = (string)Session["WriterMail"];
             ValidationResult result = _messageValidator.Validate(p);
             if (result.IsValid)
             {
-                p.SenderMail = "abdblk@hotmail.com";
+                p.SenderMail = sendermail;
                 p.Messagedate = DateTime.Parse(DateTime.Now.ToShortDateString());
                 messageManager.MessageAdd(p);
 
