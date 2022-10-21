@@ -5,5 +5,5 @@
 -HTML Templates                                                                                                                                                                                                                             
 -
 
-
-https://github.com/berjcode/ASP.NET-MVC-Web-Project-/blob/main/Gif/BilisimSozlugu.mp4
+Gif:
+https://github.com/berjcode/ASP.NET-MVC-Web-Project-/blob/main/Gif/BilisimSozluguGif.gif
