@@ -6,4 +6,4 @@
 -
 
 
-Uploading BilisimSozlugu.mp4…
+https://github.com/berjcode/ASP.NET-MVC-Web-Project-/blob/main/Gif/BilisimSozlugu.mp4
